@@ -2264,7 +2264,7 @@ h1.title {
   z-index: -1;
 }
 .article p.image-caption {
-  color: #9e9e9e;
+  color: #0f1dce;
   width: 100%;
   text-align: center;
   padding-top: 5px;
@@ -2748,7 +2748,7 @@ h1.title {
   margin: 0 0 2em;
 }
 .content em {
-  color: #9e9e9e;
+  color: #11ace6;
 }
 .content ul {
   margin: 0 0 2rem 0;
