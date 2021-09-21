@@ -420,7 +420,7 @@ for i in range(1, n):
 <li>Tìm CTTQ của $S_{m,n}$ hoặc $u_{m,n}$</li>
 <li>Chứng minh $S_{m,n} = u_{m,n+1}$</li>
 </ol>
-<h2 id="Su-dung-day-cong-thuc-truy-hoi"><a href="#Su-dung-day-cong-thuc-truy-hoi" class="headerlink" title="Sử dụng dãy công thức truy hồi"></a>Sử dụng dãy công thức truy hồi</h2><p>(cập nhật sau)</p>
+<h2 id="Su-dung-day-cong-thuc-truy-hoi"><a href="#Su-dung-day-cong-thuc-truy-hoi" class="headerlink" title="Sử dụng dãy công thức truy hồi"></a>Sử dụng dãy công thức truy hồi</h2><p>Tôi không đi vào tiếp cận này vì nó quá phức tạp, thay vào đó, tôi sử dụng liên hệ với tam giác Pascal phần tiếp theo</p>
 <h2 id="Su-dung-lien-he-voi-Tam-giac-Pascal"><a href="#Su-dung-lien-he-voi-Tam-giac-Pascal" class="headerlink" title="Sử dụng liên hệ với Tam giác Pascal"></a>Sử dụng liên hệ với Tam giác Pascal</h2><p>Ta có</p>
 <blockquote>
 <p>$u_{m,1} = 1$, $u_{1,n} = 1$</p>
@@ -450,15 +450,15 @@ for i in range(1, n):
 <blockquote>
 <p>${k \choose r} = {m+n-2 \choose m-1} = \frac{(m+n-2)!}{(m-1)! (m+n-2- (m-1))!} = \frac{(m+n-2)!}{(m-1)!(n-1)!}$</p>
 </blockquote>
-<p>Như vậy, CTTQ sẽ là</p>
+<p>Như vậy, tổng kết CTTQ mà chúng ta sẽ có là</p>
 <blockquote>
 <p>$u_{m,n} = \frac{(m+n-2)!}{(m-1)!(n-1)!}$</p>
 </blockquote>
-<p>Công việc cuối cùng là chứng minh 👇</p>
+<p>Công việc cuối cùng là chứng minh công thức dưới đây để tiện dùng hơn thông qua vài phép biến đổi (tôi sẽ không chứng minh chi tiết trong bài viết)</p>
 <blockquote>
 <p>$S_{m,n} = u_{m,n+1} = \frac{(m+n-1)!}{(m-1)!n!}$</p>
 </blockquote>
-<p>(còn tiếp)</p>
+<h1 id="Loi-ket"><a href="#Loi-ket" class="headerlink" title="Lời kết"></a>Lời kết</h1><p>Thông qua bài viết này, tôi hy vọng bạn đọc có thể tiếp tục mở ra nhiều hướng tiếp cận hay hơn, đồng thời nếu có sai sót, vui lòng liên hệ tôi để điều chỉnh kịp thời, tránh truyền tải sai.</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
@@ -518,7 +518,7 @@ for i in range(1, n):
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>Contents</h4>
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#So-luoc-bai-toan"><span class="toc-number">1.</span> <span class="toc-text">Sơ lược bài toán</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hanh-trinh-cu"><span class="toc-number">2.</span> <span class="toc-text">Hành trình cũ</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Khao-sat"><span class="toc-number">3.</span> <span class="toc-text">Khảo sát</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Su-dung-day-cong-thuc-truy-hoi"><span class="toc-number">3.1.</span> <span class="toc-text">Sử dụng dãy công thức truy hồi</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Su-dung-lien-he-voi-Tam-giac-Pascal"><span class="toc-number">3.2.</span> <span class="toc-text">Sử dụng liên hệ với Tam giác Pascal</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#So-luoc-bai-toan"><span class="toc-number">1.</span> <span class="toc-text">Sơ lược bài toán</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hanh-trinh-cu"><span class="toc-number">2.</span> <span class="toc-text">Hành trình cũ</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Khao-sat"><span class="toc-number">3.</span> <span class="toc-text">Khảo sát</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Su-dung-day-cong-thuc-truy-hoi"><span class="toc-number">3.1.</span> <span class="toc-text">Sử dụng dãy công thức truy hồi</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Su-dung-lien-he-voi-Tam-giac-Pascal"><span class="toc-number">3.2.</span> <span class="toc-text">Sử dụng liên hệ với Tam giác Pascal</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Loi-ket"><span class="toc-number">4.</span> <span class="toc-text">Lời kết</span></a></li></ol>
                 </div>
             </div>
             
